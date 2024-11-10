@@ -21,11 +21,10 @@ public class PixiesApp extends GameApplication {
     protected void initGame() {
         GameWorld world = FXGL.getGameWorld();
         world.addEntityFactory(new PixiesFactory());
-        for(int i = 0; i < 100; i ++){
+        for(int i = 0; i < 100; i ++) {
             world.spawn("pixie", new SpawnData(0,0)
                     .put("flock", 0)
             );
         }
     }
-
 }
